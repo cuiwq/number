@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        //         对数组排序，从小到大
+        //        var arr=[4,6,8,7,2,3];
+        //            //比较的轮数
+        //        for (var i = 1; i < arr.length; i++) {
+        //            //交换的次数
+        //            for (var j = 0; j < arr.length - i; j++) {
+        //                //前一项大于后一项 的值
+        //                if (arr[j] > arr[j + 1]) {
+        //                    var temp = arr[j];
+        //                    arr[j] = arr[j + 1];
+        //                    arr[j + 1] = temp;
+        //                }
+        //            }
+        //        }
+        //        console.log(arr);
+
+                //封装函数
+                function getArr(arr) {
+                    //比较的轮数
+                    for (var i = 1; i < arr.length; i++) {
+                        //交换的次数
+                        for (var j = 0; j < arr.length - i; j++) {
+                            //前一项大于后一项 的值
+                            if (arr[j] > arr[j + 1]) {
+                                var temp = arr[j];
+                                arr[j] = arr[j + 1];
+                                arr[j + 1] = temp;
+                            }
+                        }
+                    }
+                    //返回
+                    return arr;
+                }
+                //调用函数
+                getArr(arr=[54,4,6,8,7,2,3,]);
+                console.log(arr);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

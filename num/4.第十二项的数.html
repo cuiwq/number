@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        //        观察以下数列规律 1，1，2，3，5，8，13，21... 计算出数列中第12项的值
+        // 0+ 1 =  1
+        // 1+ 1 =2  ;                 5 + 8= 13       34+55=89
+        // 1+ 2 = 3;                   8+ 13=21       55+89=144
+        // 2+ 3 = 5;                   13+21=34
+        // 3+ 5 =8;                    21+34=55
+
+                        //放入数组中
+                    var arr=[1,1,2,3,5,8,13,21];
+                        //遍历数组
+                    for (var i = 1; i <12; i++) {
+                        //这个数的 是 前一个数 和 前两个数 的和
+                        arr[arr.length]=arr[arr.length-2]+arr[arr.length-1];
+                    }
+                    document.write(arr[11]);
+
+        //   针对此题的方法二:
+                     //声明三个数
+        //            var a= 1,b= 1,c=2;
+        //            //第十二项
+        //            if(n=12){
+        //                //每三个数一循环
+        //                for (var i = 1; i <n/3; i++) {
+        //                    //依次把和赋值
+        //                    a = b + c;
+        //                    b = c + a;
+        //                    c = a + b;
+        //                }
+        //        }
+        //            console.log(c);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

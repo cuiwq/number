@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        //        倒着打印用户输入的数值(思考)  //（不是很熟悉）
+                    //声明一个数
+                    var num=prompt("输入数值");
+        // 例如：  21/10=2.1    2/10=0.2
+                    // 声明倒着打印的数
+                    var num2="";
+                    //判断
+                    while(num/10>0){
+                        // 个位数的数值   取余 放入字符串num2中
+                        num2=num2+num%10;      //21 % 10
+                        //个位前面的数 即十位或者百位等等   取整
+                        num=parseInt(num/10);    // 21 /10
+                    }
+                    //隐式转化成 数值类型
+                    document.write(+num2);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

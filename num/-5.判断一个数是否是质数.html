@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+
+        //判断一个数是否是质数(除了1和它本身外没有其他因数。)
+        //假设成立法
+        function isPrime(num) {
+
+            var flag=true;
+            //不是数字或者数字小于2
+            if(typeof num!="number" || !Number.isInteger(num)) {//!Number.isInteger判断是否为整数
+                console.log("请输入正确的值");
+
+            }// 1 不是质数
+            else if(num==1){
+                console.log(num+"不是质数");
+            }
+            else {
+                //依次输出
+                for (var i = 2; i < num; i++) {
+                    if (num % i == 0) {
+                        //假设不成立的时候 即 能被它自身除外的数整除
+                        flag = false;
+                        break;
+                    }
+                }
+                //如果成立为质数 不成立就不是质数
+                if (flag) {
+                    console.log(num + "是质数");
+                } else {
+                    console.log(num + "不是质数");
+                }
+            }
+        }
+	//调用函数
+        isPrime(7);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

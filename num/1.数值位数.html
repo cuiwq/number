@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        //        计算用户输入的数值的位数(思考)
+        // 例如： 15/10=1.5   155/10=15.5,15.5/10=1.5
+                     //声明一个数
+                    var num=prompt("请输入数值");
+                    //声明位数
+                    var n=0;
+                    if(num/10==0){
+                        document.write(n=1);
+                    }else {
+                        //让这个数一直 /10
+                        //如果一个正数 /10 大于 1 或者 一个负数 /-10 大于1   则一直循环
+                        while (num / 10 > 0 || num / -10 > 0) {
+                            //这个数/10取整
+                            num = parseInt(num / 10);
+                            //位数相加
+                            n++;
+                        }
+                        document.write(n);
+                    }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

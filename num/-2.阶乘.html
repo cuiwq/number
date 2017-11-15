@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        //         求阶乘 与 求1到n之间所有数的阶乘的和
+        // 1!=1 2!=1*2=2  3!=1*2*3=6     4! =1*2*3*4=24  120
+        //        var jc=1;
+        //        var n=5;
+        //        var sum=0;
+        //        for (var i = 1; i<=n; i++) {
+        //            jc*=i;
+        //            sum+=jc;
+        //        }
+        //        console.log(sum);
+                 //函数的封装
+                function fun(n){
+                    //声明 和 的开始值为0
+                    var sum=0;
+                    //阶乘的积为1开始
+                    var jc=1;
+                    for (var i = 1; i<=n; i++) {
+                        //阶乘的值
+                        jc*=i;
+                        //所有阶乘的和
+                        sum+=jc;
+                    }
+                    console.log(sum);
+                }
+                //调用函数
+                fun(5);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

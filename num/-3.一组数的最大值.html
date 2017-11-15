@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+    // 求一组数中的最大值 2,5,6,4,8,7
+        function getMax(arr) {
+            //max最大值为数组的最后一个数
+            var max=arr[arr.length-1];
+            //循环 比较的次数
+            for (var i = 1; i < arr.length; i++) {
+               //如果里面的数比max大的话，则把那个数赋值给max
+                if(arr[i]>max){
+                    max=arr[i];
+                }
+            }
+            return max;
+        }
+        //调用函数
+        getMax(arr=[2,5,6,4,8,7,65]);
+        console.log(getMax(arr));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
